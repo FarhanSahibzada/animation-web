@@ -9,7 +9,7 @@ export default function App() {
 
   textAnimation(textRef)
 
-  const heading = "FARHAN SAHIBZADA"
+  const heading = "Animation World"
   const words = heading.split("");
 
 
