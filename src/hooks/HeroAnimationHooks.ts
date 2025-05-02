@@ -2,12 +2,10 @@ import { useGSAP } from "@gsap/react"
 import { RefObject } from "react"
 import gsap from "gsap"
 
-export const textAnimation = (textRef : RefObject<HTMLParagraphElement | null>) => {
-
+export const DescriptionAnimation = (textRef : RefObject<HTMLParagraphElement | null>) => {
     useGSAP(() => {
         if(textRef.current){
-            gsap.from(
-                textRef.current,
+            gsap.from(  textRef.current,
                 {
                     y: 100,
                     opacity: 0,
@@ -16,13 +14,12 @@ export const textAnimation = (textRef : RefObject<HTMLParagraphElement | null>) 
                 }
             )
         }
-
     }, [])
 
 }
 
 export const HeadingAnimation = (headingRef : RefObject<HTMLHeadingElement | null>) => {
-
+   
     useGSAP(() => {
         if(headingRef.current){
         gsap.from(
